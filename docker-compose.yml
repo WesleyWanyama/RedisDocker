@@ -5,7 +5,7 @@ services:
     image: haproxy:2.2
     container_name: haproxy_redis
     ports:
-      - "80:80"
+      - "6379:6379"
     volumes:
       - ./haproxy:/usr/local/etc/haproxy
     
