@@ -15,13 +15,13 @@ services:
     image: redis:latest
     container_name: redis_a
     ports:
-      - "4671:4671"
+      - "4671:6379"
 
   redis_b:
     image: redis:latest
     container_name: redis_b
     ports:
-      - "4672:4672"
+      - "4672:6379"
 
   haproxy_redis:
     image: haproxy:2.2
